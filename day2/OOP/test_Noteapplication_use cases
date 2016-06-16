@@ -4,159 +4,159 @@ import Note-it
 
  1.  """test if constructor creates the correct object ("a string")
         """
-        note_app = NotesApplication("")
-        self.assertIsInstance(note_app, NotesApplication,
-                              msg="init not working")
+        testcase = NotesApplication("")
+        self.assertIsInstance(testcase, NotesApplication,
+                              msg="initialisation not successful")
 
  2. """Establish what happpens when you pass an int to the constructor
         instead of a string
         """
-        note_app = NotesApplication(2)
-        self.assertIsNone(note_app.author,
+        testcase = NotesApplication(2)
+        self.assertIsNone(testcase.author,
                           msg="init with int shouldn't set author variable")
 
  *3. """Establish what happpens when you pass a dict to the constructor
         instead of a string
         """
-        note_app = NotesApplication({})
-        self.assertIsNone(note_app.author,
+        testcase = NotesApplication({})
+        self.assertIsNone(testcase.author,
                           msg="init with dict shouldn't set author variable")
 
  5. """test if the author instance variable is properly set
         """
-        note_app = NotesApplication("Ben")
-        self.assertEqual(note_app.author, "Ben",
+        testcase = NotesApplication("G.I. JOE")
+        self.assertEqual(testcase.author, "G.I. JOE",
                          msg="author attribute is incorrect")
 
  6. """test if the notes list is properly created
         """
-        note_app = NotesApplication("")
-        self.assertListEqual(note_app.notes, [],
+        testcase = NotesApplication("")
+        self.assertListEqual(testcase.notes, [],
                              msg="notes attribute is incorrect")
 
  7. """test whether adding a note works
         """
-        note_app = NotesApplication("Ben")
-        note_app.create("Note 0")
+        testcase = NotesApplication("G.I. JOE")
+        testcase.create("Another Note")
 
-        self.assertEqual(len(note_app.notes), 1,
+        self.assertEqual(len(testcase.notes), 1,
                          msg="notes not added correctly")
 
  8. ""test if the notes list has the correct value
         """
-        note_app = NotesApplication("Ben")
-        note_app.create("Note 0")
+        testcase = NotesApplication("G.I. JOE")
+        testcase.create("Another Note")
 
-        self.assertListEqual(note_app.notes, ["Note 0"],
+        self.assertListEqual(testcase.notes, ["Another Note"],
                              msg="incorrect notes attribute after create")
 
  9. """test if an int can be added as a note
         """
-        note_app = NotesApplication("Ben")
-        note_app.create(1)
+        testcase = NotesApplication("G.I. JOE")
+        testcase.create(1)
 
-        self.assertListEqual(note_app.notes, [1],
+        self.assertListEqual(testcase.notes, [1],
                              msg="incorrect notes attribute after create")
 
  10."""test if a list can be used to create a note
         """
-        note_app = NotesApplication("Ben")
-        note_app.create([1, 2])
+        testcase = NotesApplication("G.I. JOE")
+        testcase.create([1, 2])
 
-        self.assertListEqual(note_app.notes, [[1, 2]],
+        self.assertListEqual(testcase.notes, [[1, 2]],
                              msg="incorrect notes attribute after create")
 
  11."""Test print outs of the lists
         """
-        note_app = NotesApplication("Ben")
-        note_app.create("Note 0")
+        testcase = NotesApplication("G.I. JOE")
+        testcase.create("Another Note")
 
-        note_app.list()
+        testcase.list()
 
  12."""test normal get behaviour
         """
-        note_app = NotesApplication("Ben")
-        note_app.create("Note 0")
+        testcase = NotesApplication("G.I. JOE")
+        testcase.create("Another Note")
 
-        self.assertEqual(note_app.get(0), "Note 0",
+        self.assertEqual(testcase.get(0), "Another Note",
                          msg="Incorrect get method")
 
  13."""test get with bad parameters
         """
-        note_app = NotesApplication("Ben")
-        note_app.create("Note 0")
+        testcase = NotesApplication("G.I. JOE")
+        testcase.create("Another Note")
 
-        self.assertEqual(note_app.get(10), None,
+        self.assertEqual(testcase.get(10), None,
                          msg="Invalid index should return None")
 
  *14."""test get with bad parameters
         """
-        note_app = NotesApplication("Ben")
-        note_app.create("Note 0")
+        testcase = NotesApplication("G.I. JOE")
+        testcase.create("Another Note")
 
-        self.assertEqual(note_app.get(""), None,
+        self.assertEqual(testcase.get(""), None,
                          msg="string index should return None")
 
  15."""Test if search prints the right output"""
-        note_app = NotesApplication("Ben")
-        note_app.create("Note 0")
+        testcase = NotesApplication("G.I. JOE")
+        testcase.create("Another Note")
 
-        note_app.search("Note")
+        testcase.search("My Second")
 
- 16."""test for normal edit behaviour
+ 16."""test if list is editable
         """
-        note_app = NotesApplication("Ben")
-        note_app.create("Note 0")
+        testcase = NotesApplication("G.I. JOE")
+        testcase.create("Another Note")
 
-        self.assertTrue(note_app.edit(0, "New Note 0"),
+        self.assertTrue(testcase.edit(0, "New Another Note"),
                         msg="edit was unsuccessful")
 
  17."""test if edit changes the right variable to the right
         value
         """
-        note_app = NotesApplication("Ben")
-        note_app.create("Note 0")
-        note_app.edit(0, "New Note 0")
+        testcase = NotesApplication("G.I. JOE")
+        testcase.create("Another Note")
+        testcase.edit(0, "New Another Note")
 
-        self.assertEqual(note_app.notes[0], "New Note 0",
+        self.assertEqual(testcase.notes[0], "New Another Note",
                          msg="edit value incorrect")
 
 18. """test if edit changes the right variable to the right
         value
         """
-        note_app = NotesApplication("Ben")
-        note_app.create("Note 0")
-        note_app.edit(0, 2)
+        testcase = NotesApplication("G.I. JOE")
+        testcase.create("Another Note")
+        testcase.edit(0, 2)
 
-        self.assertEqual(note_app.notes[0], 2,
+        self.assertEqual(testcase.notes[0], 2,
                          msg="edit value incorrect")
 
  19."""test if edit recongnizes bad indexes
         """
-        note_app = NotesApplication("Ben")
-        note_app.create("Note 0")
+        testcase = NotesApplication("G.I. JOE")
+        testcase.create("Another Note")
 
-        self.assertFalse(note_app.edit(10, "New Note 0"),
+        self.assertFalse(testcase.edit(10, "New Another Note"),
                          msg="edit was unsuccessful")
 
  20 """test if edit changes the right variable to the right
         value
         """
-        note_app = NotesApplication("Ben")
-        note_app.create("Note 0")
-        note_app.edit(0, [1, 2])
+        testcase = NotesApplication("G.I. JOE")
+        testcase.create("Another Note")
+        testcase.edit(0, [1, 2])
 
-        self.assertEqual(note_app.notes[0], [1, 2],
+        self.assertEqual(testcase.notes[0], [1, 2],
                          msg="edit value incorrect")
 
  21."""test if edit changes the right variable to the right
         value
         """
-        note_app = NotesApplication("Ben")
-        note_app.create("Note 0")
-        note_app.edit(0, (1, 2))
+        testcase = NotesApplication("G.I. JOE")
+        testcase.create("Another Note")
+        testcase.edit(0, (1, 2))
 
-        self.assertEqual(note_app.notes[0], (1, 2),
+        self.assertEqual(testcase.notes[0], (1, 2),
                          msg="edit value incorrect")
 
 
