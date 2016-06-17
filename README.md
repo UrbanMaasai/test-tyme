@@ -1,4 +1,4 @@
-# test-tyme Repo Stores a note taking app with below requirements:
+#Stores a note taking app with below requirements:
 
 For this assignment you will be creating OOP code required for implementing a note taking application. Follow the steps listed to complete the assignment.
 

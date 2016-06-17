@@ -1,0 +1,75 @@
+[33mcommit 4edf3d27d632caa7c6f930f107ebfbd23c788eb5[m
+Merge: af7b9c5 5b6fcc9
+Author: Gaita Joe <gaitajoe@gmail.com>
+Date:   Fri Jun 17 11:07:01 2016 +0300
+
+    .
+
+[33mcommit 5b6fcc9a37ad40dbec15978d8bd857397d1d1ec0[m
+Author: GaitaJoe <gaitajoe@gmail.com>
+Date:   Fri Jun 17 10:43:37 2016 +0300
+
+    Deleted similar copy of note_id
+    
+    To eliminate conflicts
+
+[33mcommit af7b9c5df221a9c4eb42cf1201b5c6b2a6290f93[m
+Merge: 65b3fc9 ae6b3f2
+Author: Gaita Joe <gaitajoe@gmail.com>
+Date:   Fri Jun 17 10:05:17 2016 +0300
+
+    Merge branch 'master' of https://github.com/ramajay/test-tyme
+
+[33mcommit 65b3fc98092c5ced15926e0dfa79a3f55ac4bed2[m
+Author: Gaita Joe <gaitajoe@gmail.com>
+Date:   Fri Jun 17 09:57:55 2016 +0300
+
+    .
+
+[33mcommit ae6b3f257d61cd8689a07eac45ad7553457e517a[m
+Author: GaitaJoe <gaitajoe@gmail.com>
+Date:   Thu Jun 16 19:42:53 2016 +0300
+
+    Update README.md
+
+[33mcommit 81c3f3c6db83fbaa6ae9bc7c36243f871725f12f[m
+Author: Gaita Joe <gaitajoe@gmail.com>
+Date:   Thu Jun 16 19:37:51 2016 +0300
+
+    .
+
+[33mcommit 90d33d3a22bfe6e04d748245f714400151494d1b[m
+Author: Gaita Joe <gaitajoe@gmail.com>
+Date:   Thu Jun 16 19:02:02 2016 +0300
+
+    .
+
+[33mcommit 0bc4021903c7ccae7120de76a3b5bb8614739a7b[m
+Author: Gaita Joe <gaitajoe@gmail.com>
+Date:   Thu Jun 16 18:58:09 2016 +0300
+
+    .
+
+[33mcommit b6ba5380529d6541e01e7752f7458d2b584b93db[m
+Author: Gaita Joe <gaitajoe@gmail.com>
+Date:   Thu Jun 16 16:54:39 2016 +0300
+
+    .
+
+[33mcommit 8283b9478cff1b874ab321ffdecdad15700e5741[m
+Author: Gaita Joe <gaitajoe@gmail.com>
+Date:   Thu Jun 16 14:51:31 2016 +0300
+
+    .
+
+[33mcommit 68f3c3531e799cf10a8dac107b65ea3e390fb7da[m
+Author: Gaita Joe <gaitajoe@gmail.com>
+Date:   Thu Jun 16 14:45:24 2016 +0300
+
+    .
+
+[33mcommit 2a60d7ffdf066f87437220062631bae910b7366b[m
+Author: GaitaJoe <gaitajoe@gmail.com>
+Date:   Tue Jun 14 09:39:14 2016 +0300
+
+    Initial commit
